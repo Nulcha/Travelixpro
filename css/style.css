@@ -34,7 +34,7 @@ ul, ol{
 list-style: none;
 }
 .container{
-width: 120rem;
+width: 128rem;
 margin: 0 auto;
 }
 /* header start*/
@@ -84,8 +84,45 @@ color:var(--colorBG);
 }
 
 /*hero start*/
+.hero{
+	display: flex;
+	position: relative;
+}
 
+.hero .hero-left{
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	margin-top: 18.5rem;
+}
 
+.hero .hero-left .imgLeft{
+	position: absolute;
+	left: 0;
+	top:9.4rem;
+}
+
+.hero .hero-left h1{
+	font-size:4rem;
+	font-weight: 600;
+	color:var(--colorBlack);
+	line-height: 10rem;
+
+}
+.hero .hero-left h1 span{
+
+	color:var(--colorBrown);
+
+}
+
+.hero .hero-left .desc{
+	font-size: 2.2rem;
+	font-weight: 600;
+	color:var(--colorBlack);
+	width:min(100% - 2rem, 45rem) ;
+	line-height: 2.rem;
+
+}
 
 /*end hero right*/
 
