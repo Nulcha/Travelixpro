@@ -2,38 +2,95 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
 
 *{
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
+margin: 0;
+padding: 0;
+box-sizing: border-box;
 }
- html{
- 	font-size:62.5%;
- 	overflow-x:hidden;
+html{
+font-size:62.5%;
+overflow-x:hidden;
 
- }
+}
 
- :root{
- 	--font-family:"Inter", sans-serif;;
- 	--colorBrown:#DB6300;
- 	--colorBlack:#666666;
- 	--colorOrange:#EEAA2B;
- 	--colorBG:#FFFCF6;
- 	--colordarkblue:#0600AE;
+:root{
+--font-family:"Inter", sans-serif;;
+--colorBrown:#DB6300;
+--colorBlack:#666666;
+--colorOrange:#EEAA2B;
+--colorBG:#FFFCF6;
+--colordarkblue:#0600AE;
 
 
- }
- body{
- 	background-color: var(--colorBG);
- 	font-family: var(--font-family);
- }
+}
+body{
+background-color: var(--colorBG);
+font-family: var(--font-family);
+}
 
- a{
- 	text-decoration: none;
- }
- ul, ol{
- 	list-style: none;
- }
- .container{
- 	width: 128rem;
- 	margin: 0 auto;
- }
+a{
+text-decoration: none;
+}
+ul, ol{
+list-style: none;
+}
+.container{
+width: 120rem;
+margin: 0 auto;
+}
+/* header start*/
+
+.header{
+padding: 3.2rem;
+width: 100vh;
+}
+
+.header .nav,
+.header .navbar{
+display: flex;
+align-items:center;
+}
+
+.logo h1 {
+font-size: 32px;
+font-weight: 700;
+color:var(--colorBrown);
+
+}
+.logo h1 span{
+color:var(--colorBlack);
+}
+.header .nav .navbar{
+margin-left: auto;
+gap:4rem;
+}
+.header .nav .navbar .nav-item{
+font-size: 1.6rem;
+font-weight: 500;
+cursor: pointer;
+}
+
+.header .nav .navbar .nav-item:hover{
+color:var(--colorBrown);
+
+}
+.header .nav .sign-up{
+background-color: var(--colorBrown);
+border-radius: 1rem;
+padding: 1rem 4rem;
+margin-left: 4rem;
+font-size: 1.6rem;
+font-weight: 500;
+color:var(--colorBG);
+}
+
+/*hero start*/
+
+
+
+/*end hero right*/
+
+/*hero end*/
+
+/*header end*/
+
+
