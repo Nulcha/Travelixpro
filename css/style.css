@@ -5,6 +5,8 @@
 margin: 0;
 padding: 0;
 box-sizing: border-box;
+
+
 }
 html{
 font-size:62.5%;
@@ -13,7 +15,7 @@ overflow-x:hidden;
 }
 
 :root{
---font-family:"Inter", sans-serif;;
+--font-family:"Inter", sans-serif;
 --colorBrown:#DB6300;
 --colorBlack:#666666;
 --colorOrange:#EEAA2B;
@@ -30,12 +32,14 @@ font-family: var(--font-family);
 
 a{
 text-decoration: none;
+color: white;
 }
 ul, ol{
 list-style: none;
 }
+
 .container{
-width: 126rem;
+width: 128rem;
 margin: 0 auto;
 }
 /* header start*/
@@ -139,6 +143,7 @@ color:var(--colorBG);
 		align-items: center;
 		justify-content: space-between;
 		margin-top: 6rem;
+		margin-right: 2rem;
 		background-color: #F6F6F4;
 		border: solid .1rem var(--colorBlack);
 		border-radius: 1rem;
@@ -253,6 +258,7 @@ padding: 1rem 1.7rem;
  	position: absolute;
  	right: 6rem;
  	top:50rem;
+ }
 
 /*end hero right*/
 
@@ -264,7 +270,7 @@ padding: 1rem 1.7rem;
 
 /*start main*/
 /*why choose start*/
-
+		
 .why-choose,
 .wchu-right,
 .list,
@@ -273,13 +279,459 @@ padding: 1rem 1.7rem;
 	align-items: flex-start;
 
 }
+
 .wchu-right,
 .list{
 	flex-direction: column;
+
+}
+.list{
+	gap: 1rem;
+}
+.wchu-right p{
+	margin-top: 1.4rem;
+	margin-bottom:4rem;
+
+}
+.wchu-right .desc{
+	line-height: 1.6;
+}
+.wchu-right span{
+	font-size: 1.6rem;
+}
+
+.wchu-right h2{
+	font-size: 1.8rem;
+}
+
+.list,
+.list-item{
+	gap:3rem;
 }
 
 /*why choose end*/
 
-/*end main*/
+/*start our servise*/
+
+.our-servise{
+	position: relative;
+	margin: 0 auto;
+	font-size: 1,6rem;
+	text-align: center;
 
 
+}
+ .our-servise  .title{
+ 	width: min(100% - 4rem, 120rem);
+ 	font-size: 1.5rem;
+
+ 	
+ }
+ .our-servise .container{
+ 	width: 110rem;
+ 	margin: 0 auto;
+ 	display: flex;
+ 	margin-top: 2rem;
+ 	gap: 2rem;
+ }
+
+.card{
+	background-color: #FAFAFF;
+	width: 25rem;
+	height: 38.8rem;
+	border-radius: .5rem;
+	line-height: 1.7;
+	padding: 2rem .8rem;
+	
+ ;
+}
+.card .card-title{
+	width: 23.2rem;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 1.7;
+	text-align: center;
+	margin-top: 2rem;
+}
+.card h4{
+	font-size: 2rem;
+	margin-top: 1.5rem;
+}
+
+.card .card-btn{
+	width: min(100% - 10rem, 27rem);
+	border: solid .1rem var(--colorBrown);
+	padding: .8rem ;
+	margin: 0 auto;
+	border-radius: .5rem;
+	margin-top: 2rem;
+	font-weight: 700;
+	font-size: 1.6rem;
+	color: var(--colorBrown);
+}
+
+.our-servise .card:hover{
+	background-color: #FFFDFD;
+	transform: scale(1.06);
+	transition: .4s all;
+	box-shadow:  1px 1px 2px 2px #535353;
+
+}
+.our-servise .card-btn:hover{
+	background-color: var(--colorBrown);
+	color: white;
+}
+	
+/*end our servise*/
+/*Best VTrips start*/
+.BestTripe{
+	width: 120rem;
+	margin:0 auto;
+	margin-top: 4rem;
+
+}
+.BestTripe .Img-box{
+	display: flex;
+	width: 110rem;
+	gap: 2rem;
+	margin: 0 auto;
+}
+
+.BestTripe .title{
+	text-align: center;
+	line-height: 1.7;
+	font-size: 1.6rem;
+	
+}
+.BestTripe .title p{
+	width: 97rem;
+	margin:0 auto;
+	margin-top: 2rem;
+}
+
+.BestTripe .Best-img{
+	width: 27rem;
+	line-height: 1.7;
+	margin-top: 4rem;
+}
+
+.BestTripe .cost{
+	font-weight: 900;
+	font-size: 1.6rem;
+	position: relative;
+	margin-top: 1rem;
+}
+
+.BestTripe .cost span{
+	color: var(--colorBrown);
+	position: absolute;
+	right: 0;
+
+}
+
+.BestTripe p{
+	font-weight: 500;
+	font-size: 1.4rem;
+}
+
+.BestTripe .star i {
+	color: var(--colorOrange);
+	position: relative;
+}
+.star span{
+	color:#BDC1C4;
+	margin-left: 2rem;
+}
+
+
+.BestTripe .Best-btn{
+	width: 17rem;
+	background-color: #E47509;
+	font-size: 1.6rem;
+	padding: 1rem;
+	text-align: center;
+	border-radius: .8rem;
+	margin-top: 2rem;
+	font-weight: 700;
+	color: white;
+}
+.BestTripe .navigation{
+	text-align: center;
+}
+.BestTripe .navigation i{
+
+	margin-top: 4rem;
+	margin-left: 1rem;
+	background: transparent;
+	border-radius: 100%;
+
+}
+.BestTripe .navigation i:hover{
+ background-color: orange;
+	transform: scale(1.4);
+	transition: 0.1s;
+}
+/*Best VTrips end*/
+
+/*start Easy Trips*/
+/* start easy-left */
+.fast{
+	display: flex;
+	margin-top: 13rem;
+	position: relative;
+	width: 130rem;
+	line-height: 1.7;
+	margin-left: 4rem;
+
+}
+.fast .easy-left
+{
+	width: 40%;
+	line-height:1.7;
+}
+
+.fast .easy-left .box-title h1{
+	font-size:3rem;
+	margin: 1.2rem 0;
+	
+	
+}
+.fast .easy-left .box-title p{
+	color:#84847f;
+
+}
+.fast .easy-left .box{
+	display: flex;
+	align-items: center;
+	line-height: 2;
+	gap: 3rem;
+	margin-top: 3rem;
+	
+}
+.fast .easy-left .box img{
+	border-radius: .5rem;
+}
+.fast .easy-left .box-title span{
+	font-size: 1.2rem;
+	line-height: 1.3;
+	color:#84847f;
+}
+
+
+/* end styling easy-left */
+
+/* start easy-right */
+.fast {
+	position: relative;
+}
+
+
+
+.fast .easy-right .img-box img:nth-child(1){
+	position: absolute;
+	right: 12rem;
+	top:0;
+
+}
+
+.fast .easy-right .img-box img:nth-child(2){
+position: absolute;
+top:38rem;
+
+}
+
+.fast .easy-right .img-box img:nth-child(3){
+	position: absolute;
+	top:24rem;
+	left:50rem;
+	
+	
+
+}
+
+.fast .easy-right .img-box img:nth-child(4){
+	position: absolute;
+	top:50rem;
+    right: 16rem;
+	
+	
+
+}
+
+
+
+
+/* end styling easy-right */
+
+
+
+
+/* end Easy Trips */
+
+/* start Tourist Feedback */
+.Tourist{
+	background-color: rgb(246, 247, 232);
+	position: relative;
+	padding: 6rem;
+	margin-top: 6rem;
+	text-align: center;
+	
+	
+
+}
+
+.Tourist .title h1{
+	font-size: 3rem;
+	margin: 2rem 0;
+
+
+}
+.Tourist .title p{
+	font-size: 1.6rem;
+	width: min(100% - 30rem, 120rem);
+	margin-left: auto;
+	margin-right: auto;
+}
+.Tourist .img-box{
+	margin-top: 10rem;
+}
+.Tourist .img-box .img-group img:nth-child(1){
+	position: absolute;
+	top:24rem;
+	margin-left: 23rem;
+
+	
+}
+
+.Tourist .img-box .img-group img:nth-child(2){
+	position: absolute;
+	top:42rem;
+	margin-left: 37rem;
+
+	
+}
+.Tourist .img-box .img-group img:nth-child(3){
+	position: absolute;
+	top:24rem;
+	left:40rem;
+
+	
+}
+
+.Tourist .img-box .img-group img:nth-child(4){
+	position: absolute;
+	top:42rem;
+	left: 22rem;
+	
+
+	
+}
+.Tourist .img-box .desc{
+	
+	background-color: #FFFCF6;
+	padding: 1rem;
+	border-radius: 0.5rem;
+	font-size: 1.3rem;
+	width: 50rem;
+	margin-left: 38rem;
+	margin-top: 4rem;
+	
+	
+}
+
+
+/* end  Tourist Feedback*/
+/* footer start */
+/* travel start */
+.footer{
+	position: relative;	
+	
+	
+}
+.footer .travel{
+	position: absolute;
+	top:0;
+	width: 100%;
+	background-color:rgba(255, 111, 0, 0.717);
+	color: white;
+	
+	
+	
+}
+.footer .travel .travel-title{
+	width: 77rem;
+	line-height: 1.7;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	margin-top:4rem;
+
+}
+
+.footer .travel .travel-title h1{
+	font-size: 3.6rem;
+	font-weight: 600;
+}
+.footer .travel .travel-title .plush{
+	
+	font-size: 1.4rem;
+	width: 30rem;
+	padding: 0 3rem;
+	
+}
+
+.footer .travel .travel-btn{
+	width: 77rem;
+	background-color: #FFFCF6;
+	padding: 2rem;
+	display: flex;
+	justify-content: space-between;
+	margin-top: 4rem;
+	border-radius: 1rem;
+}
+.footer .travel .travel-btn input{
+	width: 60%;
+	border: none;
+	outline: none;
+	
+	
+	
+}
+
+.footer .travel .travel-btn button{
+	padding: 1.5rem;
+	border-radius: .5rem;
+	background-color: #DB6300;
+	outline: none;
+	border: none;
+}
+/* travel end */
+/* Start Travel-Pro */
+.Travel-Pro{
+	margin-top: 14rem;
+	width: 110rem;
+	margin-left: auto;
+	margin-right: auto;
+	display: grid;
+	grid-template-columns: auto auto auto auto;
+	font-size: 1.6rem;
+	font-weight: 400;
+	line-height: 1.7;
+	
+	
+}
+.Travel-Pro .pro{
+	width:27rem ;
+}
+.Travel-Pro .head{
+margin-bottom: 2rem;
+font-weight: 900;
+}
+.Travel-Pro .My ul li:nth-child(5){
+	word-spacing: 1.7rem;
+	font-size: 1.8rem;
+	
+	
+}
+/*End Start Travel-Pro*/
+/* footer end */
